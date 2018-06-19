@@ -1,0 +1,9 @@
+*.cmi
+*.cma
+*.cmx
+*.0
+*.log
+*.cmt
+*.cmti
+*.o
+*.status
