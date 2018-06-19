@@ -1,0 +1,19 @@
+"mono_memory.ml" 7 256 260 "mono_memory.ml" 7 256 264
+type(
+  unit -> 'a
+)
+ident(
+  def main "mono_memory.ml" 9 283 297 "mono_memory.ml" 1 0 -1
+)
+"mono_memory.ml" 7 256 265 "mono_memory.ml" 7 256 267
+type(
+  unit
+)
+"mono_memory.ml" 9 283 292 "mono_memory.ml" 9 283 297
+type(
+  bool
+)
+"mono_memory.ml" 9 283 285 "mono_memory.ml" 9 283 297
+type(
+  'a
+)

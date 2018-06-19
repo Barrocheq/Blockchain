@@ -1,0 +1,81 @@
+"main.ml" 7 256 260 "main.ml" 7 256 262
+type(
+  unit
+)
+"main.ml" 7 256 271 "main.ml" 7 256 283
+type(
+  Util.mode
+)
+ident(
+  ext_ref Options.mode
+)
+"main.ml" 8 289 293 "main.ml" 8 289 309
+type(
+  Util.mode
+)
+"main.ml" 8 289 313 "main.ml" 8 289 329
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Mono_memory.main
+)
+"main.ml" 8 289 330 "main.ml" 8 289 332
+type(
+  unit
+)
+"main.ml" 8 289 313 "main.ml" 8 289 332
+call(
+  stack
+)
+type(
+  unit
+)
+"main.ml" 9 333 337 "main.ml" 9 333 351
+type(
+  Util.mode
+)
+"main.ml" 9 333 357 "main.ml" 9 333 371
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Mono_disk.main
+)
+"main.ml" 9 333 372 "main.ml" 9 333 374
+type(
+  unit
+)
+"main.ml" 9 333 357 "main.ml" 9 333 374
+call(
+  stack
+)
+type(
+  unit
+)
+"main.ml" 10 375 379 "main.ml" 10 375 389
+type(
+  Util.mode
+)
+"main.ml" 10 375 399 "main.ml" 10 375 409
+type(
+  unit -> unit
+)
+ident(
+  ext_ref Multi.main
+)
+"main.ml" 10 375 410 "main.ml" 10 375 412
+type(
+  unit
+)
+"main.ml" 10 375 399 "main.ml" 10 375 412
+call(
+  stack
+)
+type(
+  unit
+)
+"main.ml" 7 256 265 "main.ml" 10 375 412
+type(
+  unit
+)

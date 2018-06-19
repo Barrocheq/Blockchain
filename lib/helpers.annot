@@ -1,0 +1,374 @@
+"lib/helpers.ml" 8 268 272 "lib/helpers.ml" 8 268 284
+type(
+  int
+)
+ident(
+  def block_reward "lib/helpers.ml" 10 291 291 "lib/helpers.ml" 1 0 -1
+)
+"lib/helpers.ml" 8 268 287 "lib/helpers.ml" 8 268 289
+type(
+  int
+)
+"lib/helpers.ml" 10 291 295 "lib/helpers.ml" 10 291 308
+type(
+  int
+)
+ident(
+  def pow_challenge "lib/helpers.ml" 12 315 315 "lib/helpers.ml" 1 0 -1
+)
+"lib/helpers.ml" 10 291 311 "lib/helpers.ml" 10 291 313
+type(
+  int
+)
+"lib/helpers.ml" 12 315 319 "lib/helpers.ml" 12 315 330
+type(
+  string -> string
+)
+ident(
+  def hash_string "lib/helpers.ml" 14 369 369 "lib/helpers.ml" 1 0 -1
+)
+"lib/helpers.ml" 12 315 331 "lib/helpers.ml" 12 315 332
+type(
+  string
+)
+ident(
+  def s "lib/helpers.ml" 12 315 335 "lib/helpers.ml" 12 315 367
+)
+"lib/helpers.ml" 12 315 335 "lib/helpers.ml" 12 315 348
+type(
+  string -> Digest.t
+)
+ident(
+  ext_ref Digest.string
+)
+"lib/helpers.ml" 12 315 349 "lib/helpers.ml" 12 315 350
+type(
+  string
+)
+ident(
+  int_ref s "lib/helpers.ml" 12 315 331 "lib/helpers.ml" 12 315 332
+)
+"lib/helpers.ml" 12 315 335 "lib/helpers.ml" 12 315 350
+call(
+  stack
+)
+type(
+  Digest.t
+)
+"lib/helpers.ml" 12 315 351 "lib/helpers.ml" 12 315 353
+type(
+  Digest.t -> (Digest.t -> string) -> string
+)
+ident(
+  ext_ref Pervasives.( |> )
+)
+"lib/helpers.ml" 12 315 354 "lib/helpers.ml" 12 315 367
+type(
+  Digest.t -> string
+)
+ident(
+  ext_ref Digest.to_hex
+)
+"lib/helpers.ml" 12 315 335 "lib/helpers.ml" 12 315 367
+call(
+  tail
+)
+type(
+  string
+)
+"lib/helpers.ml" 14 369 373 "lib/helpers.ml" 14 369 382
+type(
+  string -> string
+)
+ident(
+  def hash_file "lib/helpers.ml" 16 419 419 "lib/helpers.ml" 1 0 -1
+)
+"lib/helpers.ml" 14 369 383 "lib/helpers.ml" 14 369 384
+type(
+  string
+)
+ident(
+  def s "lib/helpers.ml" 14 369 387 "lib/helpers.ml" 14 369 417
+)
+"lib/helpers.ml" 14 369 387 "lib/helpers.ml" 14 369 398
+type(
+  string -> Digest.t
+)
+ident(
+  ext_ref Digest.file
+)
+"lib/helpers.ml" 14 369 399 "lib/helpers.ml" 14 369 400
+type(
+  string
+)
+ident(
+  int_ref s "lib/helpers.ml" 14 369 383 "lib/helpers.ml" 14 369 384
+)
+"lib/helpers.ml" 14 369 387 "lib/helpers.ml" 14 369 400
+call(
+  stack
+)
+type(
+  Digest.t
+)
+"lib/helpers.ml" 14 369 401 "lib/helpers.ml" 14 369 403
+type(
+  Digest.t -> (Digest.t -> string) -> string
+)
+ident(
+  ext_ref Pervasives.( |> )
+)
+"lib/helpers.ml" 14 369 404 "lib/helpers.ml" 14 369 417
+type(
+  Digest.t -> string
+)
+ident(
+  ext_ref Digest.to_hex
+)
+"lib/helpers.ml" 14 369 387 "lib/helpers.ml" 14 369 417
+call(
+  tail
+)
+type(
+  string
+)
+"lib/helpers.ml" 16 419 423 "lib/helpers.ml" 16 419 437
+type(
+  'a -> 'b -> 'c
+)
+ident(
+  def sufficient_pow "lib/helpers.ml" 20 480 480 "lib/helpers.ml" 1 0 -1
+)
+"lib/helpers.ml" 16 419 438 "lib/helpers.ml" 16 419 441
+type(
+  'a
+)
+ident(
+  def pow "lib/helpers.ml" 16 419 442 "lib/helpers.ml" 18 464 478
+)
+"lib/helpers.ml" 16 419 442 "lib/helpers.ml" 16 419 448
+type(
+  'b
+)
+ident(
+  def b_hash "lib/helpers.ml" 18 464 466 "lib/helpers.ml" 18 464 478
+)
+"lib/helpers.ml" 18 464 473 "lib/helpers.ml" 18 464 478
+type(
+  bool
+)
+"lib/helpers.ml" 18 464 466 "lib/helpers.ml" 18 464 478
+type(
+  'c
+)
+"lib/helpers.ml" 20 480 484 "lib/helpers.ml" 20 480 494
+type(
+  'a -> 'b
+)
+ident(
+  def blocks_dir "lib/helpers.ml" 24 531 531 "lib/helpers.ml" 1 0 -1
+)
+"lib/helpers.ml" 20 480 495 "lib/helpers.ml" 20 480 499
+type(
+  'a
+)
+ident(
+  def wdir "lib/helpers.ml" 22 515 517 "lib/helpers.ml" 22 515 529
+)
+"lib/helpers.ml" 22 515 524 "lib/helpers.ml" 22 515 529
+type(
+  bool
+)
+"lib/helpers.ml" 22 515 517 "lib/helpers.ml" 22 515 529
+type(
+  'b
+)
+"lib/helpers.ml" 24 531 535 "lib/helpers.ml" 24 531 551
+type(
+  'a -> pending:'b -> 'c
+)
+ident(
+  def transactions_dir "lib/helpers.ml" 28 597 597 "lib/helpers.ml" 1 0 -1
+)
+"lib/helpers.ml" 24 531 552 "lib/helpers.ml" 24 531 556
+type(
+  'a
+)
+ident(
+  def wdir "lib/helpers.ml" 24 531 557 "lib/helpers.ml" 26 581 595
+)
+"lib/helpers.ml" 24 531 558 "lib/helpers.ml" 24 531 565
+type(
+  'b
+)
+ident(
+  def pending "lib/helpers.ml" 26 581 583 "lib/helpers.ml" 26 581 595
+)
+"lib/helpers.ml" 26 581 590 "lib/helpers.ml" 26 581 595
+type(
+  bool
+)
+"lib/helpers.ml" 26 581 583 "lib/helpers.ml" 26 581 595
+type(
+  'c
+)
+"lib/helpers.ml" 28 597 601 "lib/helpers.ml" 28 597 613
+type(
+  'a -> 'b
+)
+ident(
+  def accounts_dir "lib/helpers.ml" 32 650 650 "lib/helpers.ml" 1 0 -1
+)
+"lib/helpers.ml" 28 597 614 "lib/helpers.ml" 28 597 618
+type(
+  'a
+)
+ident(
+  def wdir "lib/helpers.ml" 30 634 636 "lib/helpers.ml" 30 634 648
+)
+"lib/helpers.ml" 30 634 643 "lib/helpers.ml" 30 634 648
+type(
+  bool
+)
+"lib/helpers.ml" 30 634 636 "lib/helpers.ml" 30 634 648
+type(
+  'b
+)
+"lib/helpers.ml" 32 650 654 "lib/helpers.ml" 32 650 670
+type(
+  'a -> 'b
+)
+ident(
+  def empty_blockchain "lib/helpers.ml" 36 710 710 "lib/helpers.ml" 1 0 -1
+)
+"lib/helpers.ml" 32 650 671 "lib/helpers.ml" 32 650 678
+type(
+  'a
+)
+ident(
+  def genesis "lib/helpers.ml" 34 694 696 "lib/helpers.ml" 34 694 708
+)
+"lib/helpers.ml" 34 694 703 "lib/helpers.ml" 34 694 708
+type(
+  bool
+)
+"lib/helpers.ml" 34 694 696 "lib/helpers.ml" 34 694 708
+type(
+  'b
+)
+"lib/helpers.ml" 36 710 714 "lib/helpers.ml" 36 710 730
+type(
+  'a -> 'b -> 'c -> 'd -> 'e -> 'f
+)
+ident(
+  def mk_block_content "lib/helpers.ml" 40 808 808 "lib/helpers.ml" 1 0 -1
+)
+"lib/helpers.ml" 36 710 731 "lib/helpers.ml" 36 710 738
+type(
+  'a
+)
+ident(
+  def b_miner "lib/helpers.ml" 36 710 739 "lib/helpers.ml" 38 792 806
+)
+"lib/helpers.ml" 36 710 739 "lib/helpers.ml" 36 710 753
+type(
+  'b
+)
+ident(
+  def b_transactions "lib/helpers.ml" 36 710 754 "lib/helpers.ml" 38 792 806
+)
+"lib/helpers.ml" 36 710 754 "lib/helpers.ml" 36 710 762
+type(
+  'c
+)
+ident(
+  def previous "lib/helpers.ml" 36 710 763 "lib/helpers.ml" 38 792 806
+)
+"lib/helpers.ml" 36 710 763 "lib/helpers.ml" 36 710 770
+type(
+  'd
+)
+ident(
+  def b_nonce "lib/helpers.ml" 36 710 771 "lib/helpers.ml" 38 792 806
+)
+"lib/helpers.ml" 36 710 771 "lib/helpers.ml" 36 710 776
+type(
+  'e
+)
+ident(
+  def b_pow "lib/helpers.ml" 38 792 794 "lib/helpers.ml" 38 792 806
+)
+"lib/helpers.ml" 38 792 801 "lib/helpers.ml" 38 792 806
+type(
+  bool
+)
+"lib/helpers.ml" 38 792 794 "lib/helpers.ml" 38 792 806
+type(
+  'f
+)
+"lib/helpers.ml" 40 808 812 "lib/helpers.ml" 40 808 835
+type(
+  'a -> 'b
+)
+ident(
+  def block_content_to_string "lib/helpers.ml" 45 878 878 "lib/helpers.ml" 1 0 -1
+)
+"lib/helpers.ml" 40 808 836 "lib/helpers.ml" 40 808 845
+type(
+  'a
+)
+ident(
+  def b_content "lib/helpers.ml" 42 861 863 "lib/helpers.ml" 42 861 875
+)
+"lib/helpers.ml" 42 861 870 "lib/helpers.ml" 42 861 875
+type(
+  bool
+)
+"lib/helpers.ml" 42 861 863 "lib/helpers.ml" 42 861 875
+type(
+  'b
+)
+"lib/helpers.ml" 45 878 882 "lib/helpers.ml" 45 878 893
+type(
+  'a
+)
+ident(
+  def get_genesis "lib/helpers.ml" 49 925 925 "lib/helpers.ml" 1 0 -1
+)
+"lib/helpers.ml" 47 909 918 "lib/helpers.ml" 47 909 923
+type(
+  bool
+)
+"lib/helpers.ml" 47 909 911 "lib/helpers.ml" 47 909 923
+type(
+  'a
+)
+"lib/helpers.ml" 49 925 929 "lib/helpers.ml" 49 925 950
+type(
+  'a -> 'b -> 'c
+)
+ident(
+  def check_chain_of_blocks "lib/helpers.ml" 51 981 995 "lib/helpers.ml" 1 0 -1
+)
+"lib/helpers.ml" 49 925 951 "lib/helpers.ml" 49 925 957
+type(
+  'a
+)
+ident(
+  def b_list "lib/helpers.ml" 49 925 958 "lib/helpers.ml" 51 981 995
+)
+"lib/helpers.ml" 49 925 958 "lib/helpers.ml" 49 925 965
+type(
+  'b
+)
+ident(
+  def genesis "lib/helpers.ml" 51 981 983 "lib/helpers.ml" 51 981 995
+)
+"lib/helpers.ml" 51 981 990 "lib/helpers.ml" 51 981 995
+type(
+  bool
+)
+"lib/helpers.ml" 51 981 983 "lib/helpers.ml" 51 981 995
+type(
+  'c
+)

@@ -1,0 +1,19 @@
+"multi.ml" 7 256 260 "multi.ml" 7 256 264
+type(
+  unit -> 'a
+)
+ident(
+  def main "multi.ml" 9 283 297 "multi.ml" 1 0 -1
+)
+"multi.ml" 7 256 265 "multi.ml" 7 256 267
+type(
+  unit
+)
+"multi.ml" 9 283 292 "multi.ml" 9 283 297
+type(
+  bool
+)
+"multi.ml" 9 283 285 "multi.ml" 9 283 297
+type(
+  'a
+)
