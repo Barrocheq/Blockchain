@@ -7,3 +7,4 @@
 *.cmti
 *.o
 *.status
+*.opt
