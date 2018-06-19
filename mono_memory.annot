@@ -1,19 +1,72 @@
-"mono_memory.ml" 7 256 260 "mono_memory.ml" 7 256 264
+"mono_memory.ml" 10 353 357 "mono_memory.ml" 10 353 361
 type(
-  unit -> 'a
+  unit -> unit
 )
 ident(
-  def main "mono_memory.ml" 9 283 297 "mono_memory.ml" 1 0 -1
+  def main "mono_memory.ml" 12 401 471 "mono_memory.ml" 1 0 -1
 )
-"mono_memory.ml" 7 256 265 "mono_memory.ml" 7 256 267
+"mono_memory.ml" 10 353 362 "mono_memory.ml" 10 353 364
 type(
   unit
 )
-"mono_memory.ml" 9 283 292 "mono_memory.ml" 9 283 297
+"mono_memory.ml" 11 367 372 "mono_memory.ml" 11 367 383
 type(
-  bool
+  Types.genesis
 )
-"mono_memory.ml" 9 283 285 "mono_memory.ml" 9 283 297
+ident(
+  def first_block "mono_memory.ml" 12 401 403 "mono_memory.ml" 12 401 471
+)
+"mono_memory.ml" 11 367 386 "mono_memory.ml" 11 367 397
 type(
-  'a
+  Types.genesis
+)
+ident(
+  ext_ref Helpers.get_genesis
+)
+"mono_memory.ml" 12 401 403 "mono_memory.ml" 12 401 415
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"mono_memory.ml" 12 401 417 "mono_memory.ml" 12 401 440
+type(
+  Types.block_content -> string
+)
+ident(
+  ext_ref Helpers.block_content_to_string
+)
+"mono_memory.ml" 12 401 441 "mono_memory.ml" 12 401 452
+type(
+  Types.genesis
+)
+ident(
+  ext_ref Helpers.get_genesis
+)
+"mono_memory.ml" 12 401 441 "mono_memory.ml" 12 401 460
+type(
+  Types.block
+)
+"mono_memory.ml" 12 401 441 "mono_memory.ml" 12 401 470
+type(
+  Types.block_content
+)
+"mono_memory.ml" 12 401 416 "mono_memory.ml" 12 401 471
+call(
+  stack
+)
+type(
+  string
+)
+"mono_memory.ml" 12 401 403 "mono_memory.ml" 12 401 471
+call(
+  tail
+)
+type(
+  unit
+)
+"mono_memory.ml" 11 367 368 "mono_memory.ml" 12 401 471
+type(
+  unit
 )

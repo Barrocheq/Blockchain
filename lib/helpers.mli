@@ -29,6 +29,6 @@ val get_genesis : Types.genesis
 
 val block_content_to_string :
   Types.block_content ->
-  string * string (* string content * hash *)
+  string (* * string  string content * hash *)
 
 val check_chain_of_blocks : Types.block list -> Types.genesis -> bool

@@ -33,13 +33,19 @@ let empty_blockchain genesis =
   (* TODO *)
   assert false
 
-let mk_block_content b_miner b_transactions previous b_nonce b_pow =
-  (* TODO *)
+let mk_block_content b_miner b_transactions previous b_nonce b_pow = 
   assert false
+  (*{
+    b_previous = previous;
+    b_miner = b_miner;
+    b_pow = b_pow;
+    b_date = Util.Date.now ();
+    b_nonce = b_nonce;
+    b_transactions = b_transactions
+  }*)
 
 let block_content_to_string b_content =
-  (* TODO *)
-  assert false
+  "previous : b_level : " ^ (string_of_int b_content.b_previous.b_level) ^ ", b_id"  ^ b_content.b_previous.b_id
 
 let info =  {
     b_level = 0;
