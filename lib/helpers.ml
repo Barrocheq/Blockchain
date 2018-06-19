@@ -44,8 +44,15 @@ let mk_block_content b_miner b_transactions previous b_nonce b_pow =
     b_transactions = b_transactions
   }*)
 
+
+
 let block_content_to_string b_content =
-  "previous : b_level : " ^ (string_of_int b_content.b_previous.b_level) ^ ", b_id"  ^ b_content.b_previous.b_id
+  "previous : b_level : " ^ (string_of_int b_content.b_previous.b_level) ^ ", b_id"  ^ b_content.b_previous.b_id ^
+  "\nb_miner : " ^ b_content.b_miner ^ 
+  "\nb_pow : " ^ string_of_int b_content.b_pow ^
+  "\nb_date : " ^ Util.Date.to_string b_content.b_date ^
+  "\nb_nonce : " ^ string_of_int b_content.b_nonce ^
+  "\nb_transaction : (a faire)\n" 
 
 let info =  {
     b_level = 0;
