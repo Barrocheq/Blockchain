@@ -2,7 +2,14 @@
 (*     Copyright (C) OCamlPro SAS                                             *)
 (******************************************************************************)
 
-(* on creer un genesis, et apres une creer une loop pour faire les autres blocks*)
+(* on creer un genesis, et apres une creer une loop pour faire les autres blocks
+
+list = empty_blockchain get_genesis
+while true do
+  new block in 
+    list::block
+
+*)
 
 open Types
 open Helpers

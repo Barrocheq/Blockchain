@@ -29,21 +29,26 @@ let accounts_dir wdir =
   (* TODO *)
   assert false
 
-let empty_blockchain genesis =
-  (* TODO *)
-  assert false
+let empty_blockchain genesis = 
+  let base = {
+    blocks = [];
+    trans = [];
+    pending_trans = [];
+    accounts = [] } in 
+  {
+    genesis = genesis;
+    db = base;
+    peers_db = Util.MS.Empty
+  }
 
-let mk_block_content b_miner b_transactions previous b_nonce b_pow = 
-  assert false
-  (*{
-    b_previous = previous;
+let mk_block_content b_miner b_transactions previous b_nonce b_pow = {
+    b_previous = previous.block_info;
     b_miner = b_miner;
     b_pow = b_pow;
     b_date = Util.Date.now ();
     b_nonce = b_nonce;
     b_transactions = b_transactions
-  }*)
-
+  }
 
 
 let block_content_to_string b_content =
@@ -77,9 +82,6 @@ let get_genesis = {
   g_block = block_genesis;
   g_accounts = []
 }
-
-
-
 
 
 
