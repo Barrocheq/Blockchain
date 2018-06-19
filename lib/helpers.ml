@@ -41,10 +41,34 @@ let block_content_to_string b_content =
   (* TODO *)
   assert false
 
+let info =  {
+    b_level = 0;
+    b_id = "-1.---" ;
+}
 
-let get_genesis =
-  (* TODO *)
-  assert false
+let content = {
+    b_previous = info;
+    b_miner = "God";
+    b_pow = 0;
+    b_date = Util.Date.of_string "Mon-Jun-12--11:02:03--+00-2000";
+    b_nonce = 0;
+    b_transactions = []
+  }
+
+let block_genesis = {
+  block_info = info;
+  block_ctt = content
+}
+
+let get_genesis = {
+  g_block = block_genesis;
+  g_accounts = []
+}
+
+
+
+
+
 
 let check_chain_of_blocks b_list genesis =
   (* TODO *)
