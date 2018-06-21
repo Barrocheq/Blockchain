@@ -40,14 +40,14 @@ LIBDIR=$(DESTDIR)${exec_prefix}/lib/alt-ergo
 MANDIR=$(DESTDIR)${prefix}/share/man
 
 # other variables set by ./configure
-OCAMLC   = ocamlc.opt
-OCAMLOPT = ocamlopt.opt
+OCAMLC   = ocamlc
+OCAMLOPT = ocamlopt
 OCAMLDEP = ocamldep
-OCAMLLEX = ocamllex.opt
+OCAMLLEX = ocamllex
 OCAMLYACC= ocamlyacc
-OCAMLLIB = /Users/Quentin/.opam/4.05.0/lib/ocaml
+OCAMLLIB = /usr/lib/ocaml
 OCAMLBEST= opt
-OCAMLVERSION = 4.05.0
+OCAMLVERSION = 4.02.3
 OCAMLWEB = @OCAMLWEB@
 OCAMLWIN32 = 
 EXE = 

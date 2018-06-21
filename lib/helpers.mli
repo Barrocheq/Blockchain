@@ -25,6 +25,11 @@ val mk_block_content :
   Types.pow ->
   Types.block_content
 
+val mk_block_info :
+  int ->
+  Types.block_id ->
+  Types.block_info
+
 val get_genesis : Types.genesis
 
 val block_content_to_string :

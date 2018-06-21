@@ -1,72 +1,598 @@
-"mono_memory.ml" 10 353 357 "mono_memory.ml" 10 353 361
+"mono_memory.ml" 17 438 442 "mono_memory.ml" 17 438 446
 type(
   unit -> unit
 )
 ident(
-  def main "mono_memory.ml" 12 401 471 "mono_memory.ml" 1 0 -1
+  def main "mono_memory.ml" 28 1258 1264 "mono_memory.ml" 1 0 -1
 )
-"mono_memory.ml" 10 353 362 "mono_memory.ml" 10 353 364
+"mono_memory.ml" 17 438 447 "mono_memory.ml" 17 438 449
 type(
   unit
 )
-"mono_memory.ml" 11 367 372 "mono_memory.ml" 11 367 383
+"mono_memory.ml" 18 452 457 "mono_memory.ml" 18 452 468
 type(
   Types.genesis
 )
 ident(
-  def first_block "mono_memory.ml" 12 401 403 "mono_memory.ml" 12 401 471
+  def first_block "mono_memory.ml" 19 486 488 "mono_memory.ml" 28 1258 1264
 )
-"mono_memory.ml" 11 367 386 "mono_memory.ml" 11 367 397
+"mono_memory.ml" 18 452 471 "mono_memory.ml" 18 452 482
 type(
   Types.genesis
 )
 ident(
   ext_ref Helpers.get_genesis
 )
-"mono_memory.ml" 12 401 403 "mono_memory.ml" 12 401 415
+"mono_memory.ml" 19 486 492 "mono_memory.ml" 19 486 493
 type(
-  string -> unit
+  Types.blockchain
 )
 ident(
-  ext_ref Pervasives.print_string
+  def l "mono_memory.ml" 20 529 531 "mono_memory.ml" 28 1258 1264
 )
-"mono_memory.ml" 12 401 417 "mono_memory.ml" 12 401 440
+"mono_memory.ml" 19 486 496 "mono_memory.ml" 19 486 512
+type(
+  Types.genesis -> Types.blockchain
+)
+ident(
+  ext_ref Helpers.empty_blockchain
+)
+"mono_memory.ml" 19 486 513 "mono_memory.ml" 19 486 524
+type(
+  Types.genesis
+)
+ident(
+  int_ref first_block "mono_memory.ml" 18 452 457 "mono_memory.ml" 18 452 468
+)
+"mono_memory.ml" 19 486 496 "mono_memory.ml" 19 486 524
+call(
+  stack
+)
+type(
+  Types.blockchain
+)
+"mono_memory.ml" 20 529 539 "mono_memory.ml" 20 529 540
+type(
+  int
+)
+"mono_memory.ml" 20 529 544 "mono_memory.ml" 20 529 545
+type(
+  int
+)
+"mono_memory.ml" 21 549 558 "mono_memory.ml" 21 549 559
+type(
+  Types.blockchain
+)
+ident(
+  int_ref l "mono_memory.ml" 19 486 492 "mono_memory.ml" 19 486 493
+)
+"mono_memory.ml" 21 549 558 "mono_memory.ml" 21 549 562
+type(
+  Types.database
+)
+"mono_memory.ml" 21 549 558 "mono_memory.ml" 21 549 569
+type(
+  Types.block list
+)
+"mono_memory.ml" 22 576 581 "mono_memory.ml" 22 576 589
+type(
+  Types.block
+)
+ident(
+  def previous "mono_memory.ml" 22 576 596 "mono_memory.ml" 24 773 911
+)
+"mono_memory.ml" 22 576 591 "mono_memory.ml" 22 576 592
+type(
+  Types.block list
+)
+ident(
+  def c "mono_memory.ml" 22 576 596 "mono_memory.ml" 24 773 911
+)
+"mono_memory.ml" 22 576 581 "mono_memory.ml" 22 576 592
+type(
+  Types.block list
+)
+"mono_memory.ml" 22 576 600 "mono_memory.ml" 22 576 607
+type(
+  Types.block_content
+)
+ident(
+  def content "mono_memory.ml" 23 655 663 "mono_memory.ml" 24 773 911
+)
+"mono_memory.ml" 22 576 610 "mono_memory.ml" 22 576 626
+type(
+  Types.miner_id ->
+  Types.trans_id list ->
+  Types.block -> Types.nonce -> Types.pow -> Types.block_content
+)
+ident(
+  ext_ref Helpers.mk_block_content
+)
+"mono_memory.ml" 22 576 627 "mono_memory.ml" 22 576 633
+type(
+  Types.miner_id
+)
+"mono_memory.ml" 22 576 634 "mono_memory.ml" 22 576 636
+type(
+  Types.trans_id list
+)
+"mono_memory.ml" 22 576 637 "mono_memory.ml" 22 576 645
+type(
+  Types.block
+)
+ident(
+  int_ref previous "mono_memory.ml" 22 576 581 "mono_memory.ml" 22 576 589
+)
+"mono_memory.ml" 22 576 646 "mono_memory.ml" 22 576 647
+type(
+  Types.nonce
+)
+"mono_memory.ml" 22 576 648 "mono_memory.ml" 22 576 650
+type(
+  Types.pow
+)
+"mono_memory.ml" 22 576 610 "mono_memory.ml" 22 576 650
+call(
+  stack
+)
+type(
+  Types.block_content
+)
+"mono_memory.ml" 23 655 667 "mono_memory.ml" 23 655 671
+type(
+  Types.block_info
+)
+ident(
+  def info "mono_memory.ml" 24 773 781 "mono_memory.ml" 24 773 911
+)
+"mono_memory.ml" 23 655 674 "mono_memory.ml" 23 655 687
+type(
+  int -> Types.block_id -> Types.block_info
+)
+ident(
+  ext_ref Helpers.mk_block_info
+)
+"mono_memory.ml" 23 655 689 "mono_memory.ml" 23 655 697
+type(
+  Types.block
+)
+ident(
+  int_ref previous "mono_memory.ml" 22 576 581 "mono_memory.ml" 22 576 589
+)
+"mono_memory.ml" 23 655 689 "mono_memory.ml" 23 655 708
+type(
+  Types.block_info
+)
+"mono_memory.ml" 23 655 689 "mono_memory.ml" 23 655 716
+type(
+  int
+)
+"mono_memory.ml" 23 655 717 "mono_memory.ml" 23 655 718
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"mono_memory.ml" 23 655 719 "mono_memory.ml" 23 655 720
+type(
+  int
+)
+"mono_memory.ml" 23 655 688 "mono_memory.ml" 23 655 721
+type(
+  int
+)
+"mono_memory.ml" 23 655 723 "mono_memory.ml" 23 655 734
+type(
+  string -> Types.block_id
+)
+ident(
+  ext_ref Helpers.hash_string
+)
+"mono_memory.ml" 23 655 736 "mono_memory.ml" 23 655 759
 type(
   Types.block_content -> string
 )
 ident(
   ext_ref Helpers.block_content_to_string
 )
-"mono_memory.ml" 12 401 441 "mono_memory.ml" 12 401 452
-type(
-  Types.genesis
-)
-ident(
-  ext_ref Helpers.get_genesis
-)
-"mono_memory.ml" 12 401 441 "mono_memory.ml" 12 401 460
-type(
-  Types.block
-)
-"mono_memory.ml" 12 401 441 "mono_memory.ml" 12 401 470
+"mono_memory.ml" 23 655 760 "mono_memory.ml" 23 655 767
 type(
   Types.block_content
 )
-"mono_memory.ml" 12 401 416 "mono_memory.ml" 12 401 471
+ident(
+  int_ref content "mono_memory.ml" 22 576 600 "mono_memory.ml" 22 576 607
+)
+"mono_memory.ml" 23 655 735 "mono_memory.ml" 23 655 768
 call(
   stack
 )
 type(
   string
 )
-"mono_memory.ml" 12 401 403 "mono_memory.ml" 12 401 471
+"mono_memory.ml" 23 655 722 "mono_memory.ml" 23 655 769
 call(
-  tail
+  stack
+)
+type(
+  Types.block_id
+)
+"mono_memory.ml" 23 655 674 "mono_memory.ml" 23 655 769
+call(
+  stack
+)
+type(
+  Types.block_info
+)
+"mono_memory.ml" 24 773 785 "mono_memory.ml" 24 773 790
+type(
+  Types.block
+)
+ident(
+  def block "mono_memory.ml" 24 773 837 "mono_memory.ml" 24 773 911
+)
+"mono_memory.ml" 24 773 807 "mono_memory.ml" 24 773 811
+type(
+  Types.block_info
+)
+ident(
+  int_ref info "mono_memory.ml" 23 655 667 "mono_memory.ml" 23 655 671
+)
+"mono_memory.ml" 24 773 825 "mono_memory.ml" 24 773 832
+type(
+  Types.block_content
+)
+ident(
+  int_ref content "mono_memory.ml" 22 576 600 "mono_memory.ml" 22 576 607
+)
+"mono_memory.ml" 24 773 793 "mono_memory.ml" 24 773 833
+type(
+  Types.block
+)
+"mono_memory.ml" 24 773 837 "mono_memory.ml" 24 773 849
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"mono_memory.ml" 24 773 851 "mono_memory.ml" 24 773 874
+type(
+  Types.block_content -> string
+)
+ident(
+  ext_ref Helpers.block_content_to_string
+)
+"mono_memory.ml" 24 773 875 "mono_memory.ml" 24 773 880
+type(
+  Types.block
+)
+ident(
+  int_ref block "mono_memory.ml" 24 773 785 "mono_memory.ml" 24 773 790
+)
+"mono_memory.ml" 24 773 875 "mono_memory.ml" 24 773 890
+type(
+  Types.block_content
+)
+"mono_memory.ml" 24 773 850 "mono_memory.ml" 24 773 891
+call(
+  stack
+)
+type(
+  string
+)
+"mono_memory.ml" 24 773 837 "mono_memory.ml" 24 773 891
+call(
+  stack
 )
 type(
   unit
 )
-"mono_memory.ml" 11 367 368 "mono_memory.ml" 12 401 471
+"mono_memory.ml" 24 773 893 "mono_memory.ml" 24 773 898
+type(
+  Types.block
+)
+ident(
+  int_ref block "mono_memory.ml" 24 773 785 "mono_memory.ml" 24 773 790
+)
+"mono_memory.ml" 24 773 900 "mono_memory.ml" 24 773 901
+type(
+  Types.blockchain
+)
+ident(
+  int_ref l "mono_memory.ml" 19 486 492 "mono_memory.ml" 19 486 493
+)
+"mono_memory.ml" 24 773 900 "mono_memory.ml" 24 773 904
+type(
+  Types.database
+)
+"mono_memory.ml" 24 773 900 "mono_memory.ml" 24 773 911
+type(
+  Types.block list
+)
+"mono_memory.ml" 24 773 893 "mono_memory.ml" 24 773 911
+type(
+  Types.block list
+)
+"mono_memory.ml" 24 773 837 "mono_memory.ml" 24 773 911
+type(
+  Types.block list
+)
+"mono_memory.ml" 24 773 781 "mono_memory.ml" 24 773 911
+type(
+  Types.block list
+)
+"mono_memory.ml" 23 655 663 "mono_memory.ml" 24 773 911
+type(
+  Types.block list
+)
+"mono_memory.ml" 22 576 596 "mono_memory.ml" 24 773 911
+type(
+  Types.block list
+)
+"mono_memory.ml" 25 912 917 "mono_memory.ml" 25 912 918
+type(
+  Types.block list
+)
+"mono_memory.ml" 25 912 926 "mono_memory.ml" 25 912 933
+type(
+  Types.block_content
+)
+ident(
+  def content "mono_memory.ml" 26 992 999 "mono_memory.ml" 27 1120 1257
+)
+"mono_memory.ml" 25 912 936 "mono_memory.ml" 25 912 952
+type(
+  Types.miner_id ->
+  Types.trans_id list ->
+  Types.block -> Types.nonce -> Types.pow -> Types.block_content
+)
+ident(
+  ext_ref Helpers.mk_block_content
+)
+"mono_memory.ml" 25 912 953 "mono_memory.ml" 25 912 959
+type(
+  Types.miner_id
+)
+"mono_memory.ml" 25 912 960 "mono_memory.ml" 25 912 962
+type(
+  Types.trans_id list
+)
+"mono_memory.ml" 25 912 963 "mono_memory.ml" 25 912 974
+type(
+  Types.genesis
+)
+ident(
+  int_ref first_block "mono_memory.ml" 18 452 457 "mono_memory.ml" 18 452 468
+)
+"mono_memory.ml" 25 912 963 "mono_memory.ml" 25 912 982
+type(
+  Types.block
+)
+"mono_memory.ml" 25 912 983 "mono_memory.ml" 25 912 984
+type(
+  Types.nonce
+)
+"mono_memory.ml" 25 912 985 "mono_memory.ml" 25 912 987
+type(
+  Types.pow
+)
+"mono_memory.ml" 25 912 936 "mono_memory.ml" 25 912 987
+call(
+  stack
+)
+type(
+  Types.block_content
+)
+"mono_memory.ml" 26 992 1003 "mono_memory.ml" 26 992 1007
+type(
+  Types.block_info
+)
+ident(
+  def info "mono_memory.ml" 27 1120 1127 "mono_memory.ml" 27 1120 1257
+)
+"mono_memory.ml" 26 992 1010 "mono_memory.ml" 26 992 1023
+type(
+  int -> Types.block_id -> Types.block_info
+)
+ident(
+  ext_ref Helpers.mk_block_info
+)
+"mono_memory.ml" 26 992 1025 "mono_memory.ml" 26 992 1036
+type(
+  Types.genesis
+)
+ident(
+  int_ref first_block "mono_memory.ml" 18 452 457 "mono_memory.ml" 18 452 468
+)
+"mono_memory.ml" 26 992 1025 "mono_memory.ml" 26 992 1044
+type(
+  Types.block
+)
+"mono_memory.ml" 26 992 1025 "mono_memory.ml" 26 992 1055
+type(
+  Types.block_info
+)
+"mono_memory.ml" 26 992 1025 "mono_memory.ml" 26 992 1063
+type(
+  int
+)
+"mono_memory.ml" 26 992 1064 "mono_memory.ml" 26 992 1065
+type(
+  int -> int -> int
+)
+ident(
+  ext_ref Pervasives.( + )
+)
+"mono_memory.ml" 26 992 1066 "mono_memory.ml" 26 992 1067
+type(
+  int
+)
+"mono_memory.ml" 26 992 1024 "mono_memory.ml" 26 992 1068
+type(
+  int
+)
+"mono_memory.ml" 26 992 1070 "mono_memory.ml" 26 992 1081
+type(
+  string -> Types.block_id
+)
+ident(
+  ext_ref Helpers.hash_string
+)
+"mono_memory.ml" 26 992 1083 "mono_memory.ml" 26 992 1106
+type(
+  Types.block_content -> string
+)
+ident(
+  ext_ref Helpers.block_content_to_string
+)
+"mono_memory.ml" 26 992 1107 "mono_memory.ml" 26 992 1114
+type(
+  Types.block_content
+)
+ident(
+  int_ref content "mono_memory.ml" 25 912 926 "mono_memory.ml" 25 912 933
+)
+"mono_memory.ml" 26 992 1082 "mono_memory.ml" 26 992 1115
+call(
+  stack
+)
+type(
+  string
+)
+"mono_memory.ml" 26 992 1069 "mono_memory.ml" 26 992 1116
+call(
+  stack
+)
+type(
+  Types.block_id
+)
+"mono_memory.ml" 26 992 1010 "mono_memory.ml" 26 992 1116
+call(
+  stack
+)
+type(
+  Types.block_info
+)
+"mono_memory.ml" 27 1120 1131 "mono_memory.ml" 27 1120 1136
+type(
+  Types.block
+)
+ident(
+  def block "mono_memory.ml" 27 1120 1183 "mono_memory.ml" 27 1120 1257
+)
+"mono_memory.ml" 27 1120 1153 "mono_memory.ml" 27 1120 1157
+type(
+  Types.block_info
+)
+ident(
+  int_ref info "mono_memory.ml" 26 992 1003 "mono_memory.ml" 26 992 1007
+)
+"mono_memory.ml" 27 1120 1171 "mono_memory.ml" 27 1120 1178
+type(
+  Types.block_content
+)
+ident(
+  int_ref content "mono_memory.ml" 25 912 926 "mono_memory.ml" 25 912 933
+)
+"mono_memory.ml" 27 1120 1139 "mono_memory.ml" 27 1120 1179
+type(
+  Types.block
+)
+"mono_memory.ml" 27 1120 1183 "mono_memory.ml" 27 1120 1195
+type(
+  string -> unit
+)
+ident(
+  ext_ref Pervasives.print_string
+)
+"mono_memory.ml" 27 1120 1197 "mono_memory.ml" 27 1120 1220
+type(
+  Types.block_content -> string
+)
+ident(
+  ext_ref Helpers.block_content_to_string
+)
+"mono_memory.ml" 27 1120 1221 "mono_memory.ml" 27 1120 1226
+type(
+  Types.block
+)
+ident(
+  int_ref block "mono_memory.ml" 27 1120 1131 "mono_memory.ml" 27 1120 1136
+)
+"mono_memory.ml" 27 1120 1221 "mono_memory.ml" 27 1120 1236
+type(
+  Types.block_content
+)
+"mono_memory.ml" 27 1120 1196 "mono_memory.ml" 27 1120 1237
+call(
+  stack
+)
+type(
+  string
+)
+"mono_memory.ml" 27 1120 1183 "mono_memory.ml" 27 1120 1237
+call(
+  stack
+)
+type(
+  unit
+)
+"mono_memory.ml" 27 1120 1239 "mono_memory.ml" 27 1120 1244
+type(
+  Types.block
+)
+ident(
+  int_ref block "mono_memory.ml" 27 1120 1131 "mono_memory.ml" 27 1120 1136
+)
+"mono_memory.ml" 27 1120 1246 "mono_memory.ml" 27 1120 1247
+type(
+  Types.blockchain
+)
+ident(
+  int_ref l "mono_memory.ml" 19 486 492 "mono_memory.ml" 19 486 493
+)
+"mono_memory.ml" 27 1120 1246 "mono_memory.ml" 27 1120 1250
+type(
+  Types.database
+)
+"mono_memory.ml" 27 1120 1246 "mono_memory.ml" 27 1120 1257
+type(
+  Types.block list
+)
+"mono_memory.ml" 27 1120 1239 "mono_memory.ml" 27 1120 1257
+type(
+  Types.block list
+)
+"mono_memory.ml" 27 1120 1183 "mono_memory.ml" 27 1120 1257
+type(
+  Types.block list
+)
+"mono_memory.ml" 27 1120 1127 "mono_memory.ml" 27 1120 1257
+type(
+  Types.block list
+)
+"mono_memory.ml" 26 992 999 "mono_memory.ml" 27 1120 1257
+type(
+  Types.block list
+)
+"mono_memory.ml" 25 912 922 "mono_memory.ml" 27 1120 1257
+type(
+  Types.block list
+)
+"mono_memory.ml" 21 549 552 "mono_memory.ml" 27 1120 1257
+type(
+  Types.block list
+)
+"mono_memory.ml" 20 529 531 "mono_memory.ml" 28 1258 1264
+type(
+  unit
+)
+"mono_memory.ml" 19 486 488 "mono_memory.ml" 28 1258 1264
+type(
+  unit
+)
+"mono_memory.ml" 18 452 453 "mono_memory.ml" 28 1258 1264
 type(
   unit
 )

@@ -1,19 +1,19 @@
-"mono_disk.ml" 5 244 248 "mono_disk.ml" 5 244 252
+"mono_disk.ml" 8 269 273 "mono_disk.ml" 8 269 277
 type(
   unit -> 'a
 )
 ident(
-  def main "mono_disk.ml" 7 271 285 "mono_disk.ml" 1 0 -1
+  def main "mono_disk.ml" 9 283 296 "mono_disk.ml" 1 0 -1
 )
-"mono_disk.ml" 5 244 253 "mono_disk.ml" 5 244 255
+"mono_disk.ml" 8 269 278 "mono_disk.ml" 8 269 280
 type(
   unit
 )
-"mono_disk.ml" 7 271 280 "mono_disk.ml" 7 271 285
+"mono_disk.ml" 9 283 291 "mono_disk.ml" 9 283 296
 type(
   bool
 )
-"mono_disk.ml" 7 271 273 "mono_disk.ml" 7 271 285
+"mono_disk.ml" 9 283 284 "mono_disk.ml" 9 283 296
 type(
   'a
 )
