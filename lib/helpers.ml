@@ -14,32 +14,35 @@ let hash_string s = Digest.string s |> Digest.to_hex
 let hash_file s = Digest.file s |> Digest.to_hex
 
 let sufficient_pow pow b_hash =
-  (* TODO *)
-  assert false
+    let rec number_of_0 acc x =
+        if acc < 1 then x else number_of_0 (acc-1) (x^"0")
+    in 
+    let s = number_of_0 (pow/4) "" in
+    let sub = String.sub b_hash 0 pow in
+        String.equal sub s
 
 let blocks_dir wdir =
-  assert false
-  (* wdir + "/foo/" *)
-
+    wdir ^ "/foo/"
+  
 let transactions_dir wdir ~pending =
-  (* TODO *)
-  assert false
+    (* TODO *)
+    assert false
 
 let accounts_dir wdir =
-  (* TODO *)
-  assert false
+    (* TODO *)
+    assert false
 
 let empty_blockchain genesis = 
-  let base = {
-    blocks = [];
-    trans = [];
-    pending_trans = [];
-    accounts = [] } 
-  in {
-    genesis = genesis;
-    db = base;
-    peers_db = Util.MS.empty
-  }
+    let base = {
+        blocks = [];
+        trans = [];
+        pending_trans = [];
+        accounts = [] } 
+    in {
+        genesis = genesis;
+        db = base;
+        peers_db = Util.MS.empty
+}
 
 let mk_block_content b_miner b_transactions previous b_nonce b_pow = {
     b_previous = previous.block_info;
@@ -56,7 +59,7 @@ let mk_block_info b_level b_id = {
 }
 
 let block_content_to_string b_content =
-  "previous : b_level : " ^ (string_of_int b_content.b_previous.b_level) ^ ", b_id"  ^ b_content.b_previous.b_id ^
+  "previous : b_level : " ^ (string_of_int b_content.b_previous.b_level) ^ ", b_id : "  ^ b_content.b_previous.b_id ^
   "\nb_miner : " ^ b_content.b_miner ^ 
   "\nb_pow : " ^ string_of_int b_content.b_pow ^
   "\nb_date : " ^ Util.Date.to_string b_content.b_date ^
@@ -72,7 +75,7 @@ let content = {
     b_previous = info;
     b_miner = "God";
     b_pow = 0;
-    b_date = Util.Date.of_string "Mon-Jun-12--11:02:03--+00-2000";
+    b_date = Util.Date.now();
     b_nonce = 0;
     b_transactions = []
   }
