@@ -27,6 +27,7 @@ let main () =
 							  if sufficient_pow pow_challenge info.b_id then 
 							 	begin 
 								 	Format.printf "%s@." (block_content_to_string block.block_ctt);
+								 	print_string "\n";
 								 	create_blockchain (block::l)
 								end
 							else 
@@ -38,5 +39,10 @@ let main () =
 				   let info = mk_block_info (first_block.g_block.block_info.b_level + 1) (hash_string (block_content_to_string content)) in
 				   let block = {block_info = info; block_ctt = content} in 
 				   		print_string (block_content_to_string block.block_ctt);
+				   		print_string "\n\n";
 				   		create_blockchain (block::l)
 		in create_blockchain bc.db.blocks
+
+let rec t acc = 
+	print_int acc; print_string "\n";
+	t (acc+1)
