@@ -703,485 +703,485 @@ type(
   Types.block_content -> string
 )
 ident(
-  def block_content_to_string "lib/helpers.ml" 69 1776 1776 "lib/helpers.ml" 1 0 -1
+  def block_content_to_string "lib/helpers.ml" 69 1724 1724 "lib/helpers.ml" 1 0 -1
 )
 "lib/helpers.ml" 61 1381 1409 "lib/helpers.ml" 61 1381 1418
 type(
   Types.block_content
 )
 ident(
-  def b_content "lib/helpers.ml" 62 1421 1423 "lib/helpers.ml" 67 1738 1773
+  def b_content "lib/helpers.ml" 62 1421 1423 "lib/helpers.ml" 67 1702 1721
 )
-"lib/helpers.ml" 62 1421 1423 "lib/helpers.ml" 62 1421 1446
+"lib/helpers.ml" 62 1421 1423 "lib/helpers.ml" 62 1421 1434
 type(
   string
 )
-"lib/helpers.ml" 62 1421 1447 "lib/helpers.ml" 62 1421 1448
+"lib/helpers.ml" 62 1421 1435 "lib/helpers.ml" 62 1421 1436
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"lib/helpers.ml" 62 1421 1450 "lib/helpers.ml" 62 1421 1463
+"lib/helpers.ml" 62 1421 1438 "lib/helpers.ml" 62 1421 1451
 type(
   int -> string
 )
 ident(
   ext_ref Pervasives.string_of_int
 )
-"lib/helpers.ml" 62 1421 1464 "lib/helpers.ml" 62 1421 1473
+"lib/helpers.ml" 62 1421 1452 "lib/helpers.ml" 62 1421 1461
 type(
   Types.block_content
 )
 ident(
   int_ref b_content "lib/helpers.ml" 61 1381 1409 "lib/helpers.ml" 61 1381 1418
 )
-"lib/helpers.ml" 62 1421 1464 "lib/helpers.ml" 62 1421 1484
+"lib/helpers.ml" 62 1421 1452 "lib/helpers.ml" 62 1421 1472
 type(
   Types.block_info
 )
-"lib/helpers.ml" 62 1421 1464 "lib/helpers.ml" 62 1421 1492
+"lib/helpers.ml" 62 1421 1452 "lib/helpers.ml" 62 1421 1480
 type(
   int
 )
-"lib/helpers.ml" 62 1421 1449 "lib/helpers.ml" 62 1421 1493
+"lib/helpers.ml" 62 1421 1437 "lib/helpers.ml" 62 1421 1481
 call(
   stack
 )
 type(
   string
 )
-"lib/helpers.ml" 62 1421 1494 "lib/helpers.ml" 62 1421 1495
+"lib/helpers.ml" 62 1421 1482 "lib/helpers.ml" 62 1421 1483
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"lib/helpers.ml" 62 1421 1496 "lib/helpers.ml" 62 1421 1507
+"lib/helpers.ml" 62 1421 1484 "lib/helpers.ml" 62 1421 1487
 type(
   string
 )
-"lib/helpers.ml" 62 1421 1509 "lib/helpers.ml" 62 1421 1510
+"lib/helpers.ml" 62 1421 1489 "lib/helpers.ml" 62 1421 1490
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"lib/helpers.ml" 62 1421 1511 "lib/helpers.ml" 62 1421 1520
+"lib/helpers.ml" 62 1421 1491 "lib/helpers.ml" 62 1421 1500
 type(
   Types.block_content
 )
 ident(
   int_ref b_content "lib/helpers.ml" 61 1381 1409 "lib/helpers.ml" 61 1381 1418
 )
-"lib/helpers.ml" 62 1421 1511 "lib/helpers.ml" 62 1421 1531
+"lib/helpers.ml" 62 1421 1491 "lib/helpers.ml" 62 1421 1511
 type(
   Types.block_info
 )
-"lib/helpers.ml" 62 1421 1511 "lib/helpers.ml" 62 1421 1536
+"lib/helpers.ml" 62 1421 1491 "lib/helpers.ml" 62 1421 1516
 type(
   Types.block_id
 )
-"lib/helpers.ml" 62 1421 1537 "lib/helpers.ml" 62 1421 1538
+"lib/helpers.ml" 62 1421 1517 "lib/helpers.ml" 62 1421 1518
 type(
   Types.block_id -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"lib/helpers.ml" 63 1539 1541 "lib/helpers.ml" 63 1539 1555
+"lib/helpers.ml" 63 1519 1521 "lib/helpers.ml" 63 1519 1531
 type(
   string
 )
-"lib/helpers.ml" 63 1539 1556 "lib/helpers.ml" 63 1539 1557
+"lib/helpers.ml" 63 1519 1532 "lib/helpers.ml" 63 1519 1533
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"lib/helpers.ml" 63 1539 1558 "lib/helpers.ml" 63 1539 1567
+"lib/helpers.ml" 63 1519 1534 "lib/helpers.ml" 63 1519 1543
 type(
   Types.block_content
 )
 ident(
   int_ref b_content "lib/helpers.ml" 61 1381 1409 "lib/helpers.ml" 61 1381 1418
 )
-"lib/helpers.ml" 63 1539 1558 "lib/helpers.ml" 63 1539 1575
+"lib/helpers.ml" 63 1519 1534 "lib/helpers.ml" 63 1519 1551
 type(
   Types.miner_id
 )
-"lib/helpers.ml" 63 1539 1576 "lib/helpers.ml" 63 1539 1577
+"lib/helpers.ml" 63 1519 1552 "lib/helpers.ml" 63 1519 1553
 type(
   Types.miner_id -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"lib/helpers.ml" 64 1579 1581 "lib/helpers.ml" 64 1579 1593
+"lib/helpers.ml" 64 1555 1557 "lib/helpers.ml" 64 1555 1565
 type(
   string
 )
-"lib/helpers.ml" 64 1579 1594 "lib/helpers.ml" 64 1579 1595
+"lib/helpers.ml" 64 1555 1566 "lib/helpers.ml" 64 1555 1567
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"lib/helpers.ml" 64 1579 1596 "lib/helpers.ml" 64 1579 1609
+"lib/helpers.ml" 64 1555 1568 "lib/helpers.ml" 64 1555 1581
 type(
   int -> string
 )
 ident(
   ext_ref Pervasives.string_of_int
 )
-"lib/helpers.ml" 64 1579 1610 "lib/helpers.ml" 64 1579 1619
+"lib/helpers.ml" 64 1555 1582 "lib/helpers.ml" 64 1555 1591
 type(
   Types.block_content
 )
 ident(
   int_ref b_content "lib/helpers.ml" 61 1381 1409 "lib/helpers.ml" 61 1381 1418
 )
-"lib/helpers.ml" 64 1579 1610 "lib/helpers.ml" 64 1579 1625
+"lib/helpers.ml" 64 1555 1582 "lib/helpers.ml" 64 1555 1597
 type(
   int
 )
-"lib/helpers.ml" 64 1579 1596 "lib/helpers.ml" 64 1579 1625
+"lib/helpers.ml" 64 1555 1568 "lib/helpers.ml" 64 1555 1597
 call(
   stack
 )
 type(
   string
 )
-"lib/helpers.ml" 64 1579 1626 "lib/helpers.ml" 64 1579 1627
+"lib/helpers.ml" 64 1555 1598 "lib/helpers.ml" 64 1555 1599
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"lib/helpers.ml" 65 1628 1630 "lib/helpers.ml" 65 1628 1643
+"lib/helpers.ml" 65 1600 1602 "lib/helpers.ml" 65 1600 1611
 type(
   string
 )
-"lib/helpers.ml" 65 1628 1644 "lib/helpers.ml" 65 1628 1645
+"lib/helpers.ml" 65 1600 1612 "lib/helpers.ml" 65 1600 1613
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"lib/helpers.ml" 65 1628 1646 "lib/helpers.ml" 65 1628 1665
+"lib/helpers.ml" 65 1600 1614 "lib/helpers.ml" 65 1600 1633
 type(
   Util.Date.t -> string
 )
 ident(
   ext_ref Util.Date.to_string
 )
-"lib/helpers.ml" 65 1628 1666 "lib/helpers.ml" 65 1628 1675
+"lib/helpers.ml" 65 1600 1634 "lib/helpers.ml" 65 1600 1643
 type(
   Types.block_content
 )
 ident(
   int_ref b_content "lib/helpers.ml" 61 1381 1409 "lib/helpers.ml" 61 1381 1418
 )
-"lib/helpers.ml" 65 1628 1666 "lib/helpers.ml" 65 1628 1682
+"lib/helpers.ml" 65 1600 1634 "lib/helpers.ml" 65 1600 1650
 type(
   Util.Date.t
 )
-"lib/helpers.ml" 65 1628 1646 "lib/helpers.ml" 65 1628 1682
+"lib/helpers.ml" 65 1600 1614 "lib/helpers.ml" 65 1600 1650
 call(
   stack
 )
 type(
   string
 )
-"lib/helpers.ml" 65 1628 1683 "lib/helpers.ml" 65 1628 1684
+"lib/helpers.ml" 65 1600 1651 "lib/helpers.ml" 65 1600 1652
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"lib/helpers.ml" 66 1685 1687 "lib/helpers.ml" 66 1685 1701
+"lib/helpers.ml" 66 1653 1655 "lib/helpers.ml" 66 1653 1665
 type(
   string
 )
-"lib/helpers.ml" 66 1685 1702 "lib/helpers.ml" 66 1685 1703
+"lib/helpers.ml" 66 1653 1666 "lib/helpers.ml" 66 1653 1667
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"lib/helpers.ml" 66 1685 1704 "lib/helpers.ml" 66 1685 1717
+"lib/helpers.ml" 66 1653 1668 "lib/helpers.ml" 66 1653 1681
 type(
   Types.nonce -> string
 )
 ident(
   ext_ref Pervasives.string_of_int
 )
-"lib/helpers.ml" 66 1685 1718 "lib/helpers.ml" 66 1685 1727
+"lib/helpers.ml" 66 1653 1682 "lib/helpers.ml" 66 1653 1691
 type(
   Types.block_content
 )
 ident(
   int_ref b_content "lib/helpers.ml" 61 1381 1409 "lib/helpers.ml" 61 1381 1418
 )
-"lib/helpers.ml" 66 1685 1718 "lib/helpers.ml" 66 1685 1735
+"lib/helpers.ml" 66 1653 1682 "lib/helpers.ml" 66 1653 1699
 type(
   Types.nonce
 )
-"lib/helpers.ml" 66 1685 1704 "lib/helpers.ml" 66 1685 1735
+"lib/helpers.ml" 66 1653 1668 "lib/helpers.ml" 66 1653 1699
 call(
   stack
 )
 type(
   string
 )
-"lib/helpers.ml" 66 1685 1736 "lib/helpers.ml" 66 1685 1737
+"lib/helpers.ml" 66 1653 1700 "lib/helpers.ml" 66 1653 1701
 type(
   string -> string -> string
 )
 ident(
   ext_ref Pervasives.( ^ )
 )
-"lib/helpers.ml" 67 1738 1740 "lib/helpers.ml" 67 1738 1773
+"lib/helpers.ml" 67 1702 1704 "lib/helpers.ml" 67 1702 1721
 type(
   string
 )
-"lib/helpers.ml" 66 1685 1704 "lib/helpers.ml" 67 1738 1773
+"lib/helpers.ml" 66 1653 1668 "lib/helpers.ml" 67 1702 1721
 call(
   stack
 )
 type(
   string
 )
-"lib/helpers.ml" 66 1685 1687 "lib/helpers.ml" 67 1738 1773
+"lib/helpers.ml" 66 1653 1655 "lib/helpers.ml" 67 1702 1721
 call(
   stack
 )
 type(
   string
 )
-"lib/helpers.ml" 65 1628 1646 "lib/helpers.ml" 67 1738 1773
+"lib/helpers.ml" 65 1600 1614 "lib/helpers.ml" 67 1702 1721
 call(
   stack
 )
 type(
   string
 )
-"lib/helpers.ml" 65 1628 1630 "lib/helpers.ml" 67 1738 1773
+"lib/helpers.ml" 65 1600 1602 "lib/helpers.ml" 67 1702 1721
 call(
   stack
 )
 type(
   string
 )
-"lib/helpers.ml" 64 1579 1596 "lib/helpers.ml" 67 1738 1773
+"lib/helpers.ml" 64 1555 1568 "lib/helpers.ml" 67 1702 1721
 call(
   stack
 )
 type(
   string
 )
-"lib/helpers.ml" 64 1579 1581 "lib/helpers.ml" 67 1738 1773
+"lib/helpers.ml" 64 1555 1557 "lib/helpers.ml" 67 1702 1721
 call(
   stack
 )
 type(
   string
 )
-"lib/helpers.ml" 63 1539 1558 "lib/helpers.ml" 67 1738 1773
+"lib/helpers.ml" 63 1519 1534 "lib/helpers.ml" 67 1702 1721
 call(
   stack
 )
 type(
   string
 )
-"lib/helpers.ml" 63 1539 1541 "lib/helpers.ml" 67 1738 1773
+"lib/helpers.ml" 63 1519 1521 "lib/helpers.ml" 67 1702 1721
 call(
   stack
 )
 type(
   string
 )
-"lib/helpers.ml" 62 1421 1511 "lib/helpers.ml" 67 1738 1773
+"lib/helpers.ml" 62 1421 1491 "lib/helpers.ml" 67 1702 1721
 call(
   stack
 )
 type(
   string
 )
-"lib/helpers.ml" 62 1421 1496 "lib/helpers.ml" 67 1738 1773
+"lib/helpers.ml" 62 1421 1484 "lib/helpers.ml" 67 1702 1721
 call(
   stack
 )
 type(
   string
 )
-"lib/helpers.ml" 62 1421 1449 "lib/helpers.ml" 67 1738 1773
+"lib/helpers.ml" 62 1421 1437 "lib/helpers.ml" 67 1702 1721
 call(
   stack
 )
 type(
   string
 )
-"lib/helpers.ml" 62 1421 1423 "lib/helpers.ml" 67 1738 1773
+"lib/helpers.ml" 62 1421 1423 "lib/helpers.ml" 67 1702 1721
 call(
   tail
 )
 type(
   string
 )
-"lib/helpers.ml" 69 1776 1780 "lib/helpers.ml" 69 1776 1784
+"lib/helpers.ml" 69 1724 1728 "lib/helpers.ml" 69 1724 1732
 type(
   Types.block_info
 )
 ident(
-  def info "lib/helpers.ml" 74 1832 1832 "lib/helpers.ml" 1 0 -1
+  def info "lib/helpers.ml" 74 1780 1780 "lib/helpers.ml" 1 0 -1
 )
-"lib/helpers.ml" 70 1790 1804 "lib/helpers.ml" 70 1790 1805
+"lib/helpers.ml" 70 1738 1752 "lib/helpers.ml" 70 1738 1753
 type(
   int
 )
-"lib/helpers.ml" 71 1807 1818 "lib/helpers.ml" 71 1807 1826
+"lib/helpers.ml" 71 1755 1766 "lib/helpers.ml" 71 1755 1774
 type(
   Types.block_id
 )
-"lib/helpers.ml" 69 1776 1788 "lib/helpers.ml" 72 1829 1830
+"lib/helpers.ml" 69 1724 1736 "lib/helpers.ml" 72 1777 1778
 type(
   Types.block_info
 )
-"lib/helpers.ml" 74 1832 1836 "lib/helpers.ml" 74 1832 1843
+"lib/helpers.ml" 74 1780 1784 "lib/helpers.ml" 74 1780 1791
 type(
   Types.block_content
 )
 ident(
-  def content "lib/helpers.ml" 83 1983 1983 "lib/helpers.ml" 1 0 -1
+  def content "lib/helpers.ml" 83 1968 1968 "lib/helpers.ml" 1 0 -1
 )
-"lib/helpers.ml" 75 1848 1865 "lib/helpers.ml" 75 1848 1869
+"lib/helpers.ml" 75 1796 1813 "lib/helpers.ml" 75 1796 1817
 type(
   Types.block_info
 )
 ident(
-  int_ref info "lib/helpers.ml" 69 1776 1780 "lib/helpers.ml" 69 1776 1784
+  int_ref info "lib/helpers.ml" 69 1724 1728 "lib/helpers.ml" 69 1724 1732
 )
-"lib/helpers.ml" 76 1871 1885 "lib/helpers.ml" 76 1871 1890
+"lib/helpers.ml" 76 1819 1833 "lib/helpers.ml" 76 1819 1838
 type(
   Types.miner_id
 )
-"lib/helpers.ml" 77 1892 1904 "lib/helpers.ml" 77 1892 1905
+"lib/helpers.ml" 77 1840 1852 "lib/helpers.ml" 77 1840 1853
 type(
   int
 )
-"lib/helpers.ml" 78 1907 1920 "lib/helpers.ml" 78 1907 1933
+"lib/helpers.ml" 78 1855 1868 "lib/helpers.ml" 78 1855 1887
 type(
-  unit -> Util.Date.t
+  string -> Util.Date.t
 )
 ident(
-  ext_ref Util.Date.now
+  ext_ref Util.Date.of_string
 )
-"lib/helpers.ml" 78 1907 1933 "lib/helpers.ml" 78 1907 1935
+"lib/helpers.ml" 78 1855 1888 "lib/helpers.ml" 78 1855 1920
 type(
-  unit
+  string
 )
-"lib/helpers.ml" 78 1907 1920 "lib/helpers.ml" 78 1907 1935
+"lib/helpers.ml" 78 1855 1868 "lib/helpers.ml" 78 1855 1920
 call(
   stack
 )
 type(
   Util.Date.t
 )
-"lib/helpers.ml" 79 1937 1951 "lib/helpers.ml" 79 1937 1952
+"lib/helpers.ml" 79 1922 1936 "lib/helpers.ml" 79 1922 1937
 type(
   Types.nonce
 )
-"lib/helpers.ml" 80 1954 1975 "lib/helpers.ml" 80 1954 1977
+"lib/helpers.ml" 80 1939 1960 "lib/helpers.ml" 80 1939 1962
 type(
   Types.trans_id list
 )
-"lib/helpers.ml" 74 1832 1846 "lib/helpers.ml" 81 1978 1981
+"lib/helpers.ml" 74 1780 1794 "lib/helpers.ml" 81 1963 1966
 type(
   Types.block_content
 )
-"lib/helpers.ml" 83 1983 1987 "lib/helpers.ml" 83 1983 2000
+"lib/helpers.ml" 83 1968 1972 "lib/helpers.ml" 83 1968 1985
 type(
   Types.block
 )
 ident(
-  def block_genesis "lib/helpers.ml" 88 2051 2051 "lib/helpers.ml" 1 0 -1
+  def block_genesis "lib/helpers.ml" 88 2036 2036 "lib/helpers.ml" 1 0 -1
 )
-"lib/helpers.ml" 84 2005 2020 "lib/helpers.ml" 84 2005 2024
+"lib/helpers.ml" 84 1990 2005 "lib/helpers.ml" 84 1990 2009
 type(
   Types.block_info
 )
 ident(
-  int_ref info "lib/helpers.ml" 69 1776 1780 "lib/helpers.ml" 69 1776 1784
+  int_ref info "lib/helpers.ml" 69 1724 1728 "lib/helpers.ml" 69 1724 1732
 )
-"lib/helpers.ml" 85 2026 2040 "lib/helpers.ml" 85 2026 2047
+"lib/helpers.ml" 85 2011 2025 "lib/helpers.ml" 85 2011 2032
 type(
   Types.block_content
 )
 ident(
-  int_ref content "lib/helpers.ml" 74 1832 1836 "lib/helpers.ml" 74 1832 1843
+  int_ref content "lib/helpers.ml" 74 1780 1784 "lib/helpers.ml" 74 1780 1791
 )
-"lib/helpers.ml" 83 1983 2003 "lib/helpers.ml" 86 2048 2049
+"lib/helpers.ml" 83 1968 1988 "lib/helpers.ml" 86 2033 2034
 type(
   Types.block
 )
-"lib/helpers.ml" 88 2051 2055 "lib/helpers.ml" 88 2051 2066
+"lib/helpers.ml" 88 2036 2040 "lib/helpers.ml" 88 2036 2051
 type(
   Types.genesis
 )
 ident(
-  def get_genesis "lib/helpers.ml" 95 2121 2121 "lib/helpers.ml" 1 0 -1
+  def get_genesis "lib/helpers.ml" 95 2106 2106 "lib/helpers.ml" 1 0 -1
 )
-"lib/helpers.ml" 89 2071 2083 "lib/helpers.ml" 89 2071 2096
+"lib/helpers.ml" 89 2056 2068 "lib/helpers.ml" 89 2056 2081
 type(
   Types.block
 )
 ident(
-  int_ref block_genesis "lib/helpers.ml" 83 1983 1987 "lib/helpers.ml" 83 1983 2000
+  int_ref block_genesis "lib/helpers.ml" 83 1968 1972 "lib/helpers.ml" 83 1968 1985
 )
-"lib/helpers.ml" 90 2098 2113 "lib/helpers.ml" 90 2098 2115
+"lib/helpers.ml" 90 2083 2098 "lib/helpers.ml" 90 2083 2100
 type(
   Types.account list
 )
-"lib/helpers.ml" 88 2051 2069 "lib/helpers.ml" 91 2116 2117
+"lib/helpers.ml" 88 2036 2054 "lib/helpers.ml" 91 2101 2102
 type(
   Types.genesis
 )
-"lib/helpers.ml" 95 2121 2125 "lib/helpers.ml" 95 2121 2146
+"lib/helpers.ml" 95 2106 2110 "lib/helpers.ml" 95 2106 2131
 type(
   'a -> 'b -> 'c
 )
 ident(
-  def check_chain_of_blocks "lib/helpers.ml" 97 2177 2191 "lib/helpers.ml" 1 0 -1
+  def check_chain_of_blocks "lib/helpers.ml" 97 2162 2176 "lib/helpers.ml" 1 0 -1
 )
-"lib/helpers.ml" 95 2121 2147 "lib/helpers.ml" 95 2121 2153
+"lib/helpers.ml" 95 2106 2132 "lib/helpers.ml" 95 2106 2138
 type(
   'a
 )
 ident(
-  def b_list "lib/helpers.ml" 95 2121 2154 "lib/helpers.ml" 97 2177 2191
+  def b_list "lib/helpers.ml" 95 2106 2139 "lib/helpers.ml" 97 2162 2176
 )
-"lib/helpers.ml" 95 2121 2154 "lib/helpers.ml" 95 2121 2161
+"lib/helpers.ml" 95 2106 2139 "lib/helpers.ml" 95 2106 2146
 type(
   'b
 )
 ident(
-  def genesis "lib/helpers.ml" 97 2177 2179 "lib/helpers.ml" 97 2177 2191
+  def genesis "lib/helpers.ml" 97 2162 2164 "lib/helpers.ml" 97 2162 2176
 )
-"lib/helpers.ml" 97 2177 2186 "lib/helpers.ml" 97 2177 2191
+"lib/helpers.ml" 97 2162 2171 "lib/helpers.ml" 97 2162 2176
 type(
   bool
 )
-"lib/helpers.ml" 97 2177 2179 "lib/helpers.ml" 97 2177 2191
+"lib/helpers.ml" 97 2162 2164 "lib/helpers.ml" 97 2162 2176
 type(
   'c
 )
