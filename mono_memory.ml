@@ -21,20 +21,20 @@ let main () =
 
 		let rec create_blockchain l =
 			match l with 
-			| previous::c -> let content = mk_block_content "isd_groupe_4" [] previous (Random.bits ()) 4 in 
+			| previous::c -> let content = mk_block_content "isd_groupe_4" [] previous (Random.bits ()) pow_challenge in 
 							 let info = mk_block_info (previous.block_info.b_level + 1) (hash_string (block_content_to_string content)) in
 							 let block = {block_info = info; block_ctt = content} in 
-							  if sufficient_pow 4 info.b_id then 
+							  if sufficient_pow pow_challenge info.b_id then 
 							 	begin
 								 	print_string (block_content_to_string block.block_ctt); 
 								 	create_blockchain (block::l)
 								end
 							else 
 								begin
-									print_string (info.b_id ^ "\n"); 
+									(* print_string (info.b_id ^ "\n");  *)
 								 	create_blockchain l
 								end
-			| _ -> let content = mk_block_content "isd_groupe_4" [] first_block.g_block (Random.bits ()) 4 in 
+			| _ -> let content = mk_block_content "isd_groupe_4" [] first_block.g_block (Random.bits ()) pow_challenge in 
 				   let info = mk_block_info (first_block.g_block.block_info.b_level + 1) (hash_string (block_content_to_string content)) in
 				   let block = {block_info = info; block_ctt = content} in 
 				   		print_string ("On est la");

@@ -7,7 +7,7 @@ open Format
 
 let block_reward = 10
 
-let pow_challenge = 4
+let pow_challenge = 3
 
 let hash_string s = Digest.string s |> Digest.to_hex
 
@@ -18,7 +18,6 @@ let sufficient_pow pow b_hash =
         if acc < 1 then x else number_of_0 (acc-1) (x^"0")
     in 
     let s = number_of_0 pow "" in
-    print_string s;
     let sub = String.sub b_hash 0 pow in
         String.equal sub s
 
