@@ -64,7 +64,7 @@ let block_content_to_string b_content =
   "\npow " ^ string_of_int b_content.b_pow ^
   "\ndate " ^ Util.Date.to_string b_content.b_date ^
   "\nnonce " ^ string_of_int b_content.b_nonce ^
-  "\ntransaction\n" 
+  "\ntransaction" 
 
 let info =  {
     b_level = 0;

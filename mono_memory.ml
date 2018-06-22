@@ -32,7 +32,6 @@ let main () =
 								end
 							else 
 								begin
-									(* print_string (info.b_id ^ "\n");  *)
 								 	create_blockchain l
 								end
 			| _ -> let content = mk_block_content "isd_groupe_4" [] first_block.g_block (Random.bits ()) pow_challenge in 
