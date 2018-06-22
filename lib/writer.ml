@@ -13,5 +13,10 @@ let write_block b content =
   	close_out oc
 
 let save_database db =
-  (* TODO *)
-  assert false
+  let rec save_block blocks = 
+  	match blocks with 
+  	| previous::c -> write_block previous (block_content_to_string previous.block_ctt);
+  					 save_block c
+  	| [] -> print_string "Blocks saved"
+  in save_block db.blocks
+  (* we didn't save transation, pending_trans and accounts *)
