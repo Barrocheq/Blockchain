@@ -15,6 +15,7 @@ open Types
 open Helpers
 
 let main () =
+	print_string "\n";
 	Random.self_init ();
 	let first_block = get_genesis in
 		let bc = empty_blockchain first_block in 
