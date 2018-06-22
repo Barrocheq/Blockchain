@@ -59,7 +59,7 @@ let mk_block_info b_level b_id = {
 }
 
 let block_content_to_string b_content =
-  "previous : b_level : " ^ (string_of_int b_content.b_previous.b_level) ^ ", b_id : "  ^ b_content.b_previous.b_id ^
+  "previous " ^ (string_of_int b_content.b_previous.b_level) ^ "."  ^ b_content.b_previous.b_id ^
   "\nminer " ^ b_content.b_miner ^ 
   "\npow " ^ string_of_int b_content.b_pow ^
   "\ndate " ^ Util.Date.to_string b_content.b_date ^
