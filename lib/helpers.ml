@@ -7,7 +7,7 @@ open Format
 
 let block_reward = 10
 
-let pow_challenge = 20
+let pow_challenge = 12
 
 let hash_string s = Digest.string s |> Digest.to_hex
 
@@ -66,27 +66,20 @@ let block_content_to_string b_content =
   "\nnonce " ^ string_of_int b_content.b_nonce ^
   "\ntransaction" 
 
-let info =  {
-    b_level = 0;
-    b_id = "-1.---" ;
-}
-
-let content = {
-    b_previous = info;
+let block_genesis () = {
+  block_info = {b_level = 0; b_id = "---"};
+  block_ctt = {
+    b_previous = {b_level = 0; b_id = "---"};
     b_miner = "God";
     b_pow = 0;
     b_date = Util.Date.of_string "Mon-Jun-12--11:02:03--+00-2000";
     b_nonce = 0;
     b_transactions = []
   }
-
-let block_genesis = {
-  block_info = info;
-  block_ctt = content
 }
 
 let get_genesis = {
-  g_block = block_genesis;
+  g_block = block_genesis ();
   g_accounts = []
 }
 

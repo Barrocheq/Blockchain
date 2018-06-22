@@ -2,46 +2,39 @@
 (*     Copyright (C) OCamlPro SAS                                             *)
 (******************************************************************************)
 
-(* on creer un genesis, et apres une creer une loop pour faire les autres blocks
-
-list = empty_blockchain get_genesis
-while true do
-  new block in 
-    list::block
-
-*)
+(* on creer un genesis, et apres une creer une loop pour faire les autres blocks *)
 
 open Types
 open Helpers
 
-let main () =
+let forge_block miner_id tr_list previous_block nonce pow = 
+	let bc = mk_block_content miner_id tr_list previous_block nonce pow in 
+		let bi = mk_block_info (bc.b_previous.b_level+1) (hash_string (block_content_to_string bc)) in
+			{block_info = bi; block_ctt = bc} 
+
+let main () = 
 	Random.self_init ();
-	let first_block = get_genesis in
-		let bc = empty_blockchain first_block in 
+	let genesis = get_genesis in
+		let bchain = empty_blockchain genesis in
 
-		let rec create_blockchain l =
-			match l with 
-			| previous::c -> let content = mk_block_content "isd_groupe_4" [] previous (Random.bits ()) pow_challenge in 
-							 let info = mk_block_info (previous.block_info.b_level + 1) (hash_string (block_content_to_string content)) in
-							 let block = {block_info = info; block_ctt = content} in 
-							  if sufficient_pow pow_challenge info.b_id then 
-							 	begin 
-								 	Format.printf "%s@." (block_content_to_string block.block_ctt);
-								 	print_string "\n";
-								 	create_blockchain (block::l)
-								end
-							else 
-								begin
-								 	create_blockchain l
-								end
-			| _ -> let content = mk_block_content "isd_groupe_4" [] first_block.g_block (Random.bits ()) pow_challenge in 
-				   let info = mk_block_info (first_block.g_block.block_info.b_level + 1) (hash_string (block_content_to_string content)) in
-				   let block = {block_info = info; block_ctt = content} in 
-				   		print_string (block_content_to_string block.block_ctt);
-				   		print_string "\n\n";
-				   		create_blockchain (block::l)
-		in create_blockchain bc.db.blocks
-
-let rec t acc = 
-	print_int acc; print_string "\n";
-	t (acc+1)
+			let rec fill_blockchain blocklist = 
+				match blocklist with 
+					| [] -> (* La liste de blocs est vide donc il faut forger le premier bloc a partir de genesis*)
+									let fb = forge_block "isd_groupe_4" [] genesis.g_block (Random.bits ()) pow_challenge in
+										if sufficient_pow pow_challenge (hash_string (block_content_to_string fb.block_ctt)) 
+										then begin
+											Format.printf "%s@." (block_content_to_string fb.block_ctt);
+								 			print_string "\n";
+								 			fill_blockchain (fb :: []) end
+								 		else 
+								 			fill_blockchain blocklist;
+					| bk::tail ->  
+										let fb = forge_block "isd_groupe_4" [] bk (Random.bits ()) pow_challenge in
+										if sufficient_pow pow_challenge (hash_string (block_content_to_string fb.block_ctt)) 
+										then begin
+											Format.printf "%s@." (block_content_to_string fb.block_ctt);
+								 			print_string "\n";
+								 			fill_blockchain (fb :: blocklist) end
+								 		else 
+								 			fill_blockchain blocklist;
+			in fill_blockchain bchain.db.blocks
