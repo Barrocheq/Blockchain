@@ -7,7 +7,7 @@ open Format
 
 let block_reward = 10
 
-let pow_challenge = 3
+let pow_challenge = 4
 
 let hash_string s = Digest.string s |> Digest.to_hex
 

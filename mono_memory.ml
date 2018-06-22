@@ -15,7 +15,7 @@ open Types
 open Helpers
 
 let main () =
-	Random.self_init;
+	Random.self_init ();
 	let first_block = get_genesis in
 		let bc = empty_blockchain first_block in 
 
@@ -25,8 +25,8 @@ let main () =
 							 let info = mk_block_info (previous.block_info.b_level + 1) (hash_string (block_content_to_string content)) in
 							 let block = {block_info = info; block_ctt = content} in 
 							  if sufficient_pow pow_challenge info.b_id then 
-							 	begin
-								 	print_string (block_content_to_string block.block_ctt); 
+							 	begin 
+								 	Format.printf "%s@." (block_content_to_string block.block_ctt);
 								 	create_blockchain (block::l)
 								end
 							else 
