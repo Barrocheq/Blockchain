@@ -22,7 +22,7 @@ let sufficient_pow pow b_hash =
         String.equal sub s
 
 let blocks_dir wdir =
-    wdir ^ "/foo/"
+    wdir
   
 let transactions_dir wdir ~pending =
     (* TODO *)
@@ -64,7 +64,7 @@ let block_content_to_string b_content =
   "\npow " ^ string_of_int b_content.b_pow ^
   "\ndate " ^ Util.Date.to_string b_content.b_date ^
   "\nnonce " ^ string_of_int b_content.b_nonce ^
-  "\ntransaction" 
+  "\ntransactions" 
 
 let info =  {
     b_level = 0;
