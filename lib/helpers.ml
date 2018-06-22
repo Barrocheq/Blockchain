@@ -60,11 +60,11 @@ let mk_block_info b_level b_id = {
 
 let block_content_to_string b_content =
   "previous : b_level : " ^ (string_of_int b_content.b_previous.b_level) ^ ", b_id : "  ^ b_content.b_previous.b_id ^
-  "\nb_miner : " ^ b_content.b_miner ^ 
-  "\nb_pow : " ^ string_of_int b_content.b_pow ^
-  "\nb_date : " ^ Util.Date.to_string b_content.b_date ^
-  "\nb_nonce : " ^ string_of_int b_content.b_nonce ^
-  "\nb_transaction : (a faire)\n\n" 
+  "\nminer " ^ b_content.b_miner ^ 
+  "\npow " ^ string_of_int b_content.b_pow ^
+  "\ndate " ^ Util.Date.to_string b_content.b_date ^
+  "\nnonce " ^ string_of_int b_content.b_nonce ^
+  "\ntransaction (a faire)\n\n" 
 
 let info =  {
     b_level = 0;
@@ -75,7 +75,7 @@ let content = {
     b_previous = info;
     b_miner = "God";
     b_pow = 0;
-    b_date = Util.Date.now();
+    b_date = Util.Date.of_string "Mon-Jun-12--11:02:03--+00-2000";
     b_nonce = 0;
     b_transactions = []
   }
