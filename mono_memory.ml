@@ -37,7 +37,6 @@ let main () =
 			| _ -> let content = mk_block_content "isd_groupe_4" [] first_block.g_block (Random.bits ()) pow_challenge in 
 				   let info = mk_block_info (first_block.g_block.block_info.b_level + 1) (hash_string (block_content_to_string content)) in
 				   let block = {block_info = info; block_ctt = content} in 
-				   		print_string ("On est la");
 				   		print_string (block_content_to_string block.block_ctt);
 				   		create_blockchain (block::l)
 		in create_blockchain bc.db.blocks
