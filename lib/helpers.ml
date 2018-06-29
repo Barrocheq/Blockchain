@@ -22,7 +22,7 @@ let sufficient_pow pow b_hash =
         String.equal sub s
 
 let blocks_dir wdir =
-    wdir
+    "foo/" ^ wdir
   
 let transactions_dir wdir ~pending =
     (* TODO *)
